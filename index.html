@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neon Light Animation in css</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+        }
+
+        body {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+
+        }
+        h2 {
+            font-size: 90px;
+            font-weight: 800;
+            cursor: pointer;
+            animation: anime 0.3s linear infinite;
+        }
+       @keyframes anime {
+            from {
+                color: grey;
+            }
+
+            to {
+                color: white;
+                text-shadow: 0 0 5px #D63484,
+                    0 0 25px #D63484,
+                    0 0 50px #D63484,
+                    0 0 100px #D63484,
+                    0 0 125px #D63484;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Positive Vibes</h2>
+</body>
+
+</html>
